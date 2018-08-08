@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1>Fruits</h1>
+<p id="display"></p>
+<input type="button" value="enter fruit" onclick="getFruit()">
+<script>
+
+var fruits = ["apple", "lemon", "orange"]
+function getFruit(){
+	var pop = prompt("Enter a fruit that you like").toLowerCase();
+	fruits.push(pop);
+	fruits.sort();
+	document.getElementById('display').innerHTML= fruits.join(" with ");
+}
+
+</script>
+<!-- put parenthesis for input -->
+
+<!-- to comment = ctrl + / -->
+<!-- get user input
+store input in an array
+get first index
+make first index capitlize
+display to screen
+the function should get the info -->
+
+</body>
+</html>
